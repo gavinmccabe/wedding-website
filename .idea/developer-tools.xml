@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DeveloperToolsToolWindowSettingsV1" lastSelectedContentNodeId="lorem-ipsum-generator">
+    <developerToolsConfigurations>
+      <developerToolConfiguration developerToolId="lorem-ipsum-generator" id="400866e0-a6f7-4048-bac6-c250ba75bd38" name="Workbench">
+        <properties>
+          <property key="numberOfValues" type="CONFIGURATION" value="kotlin.Int|1" />
+          <property key="maxWordsInParagraph" type="CONFIGURATION" value="kotlin.Int|50" />
+        </properties>
+      </developerToolConfiguration>
+    </developerToolsConfigurations>
+  </component>
+</project>

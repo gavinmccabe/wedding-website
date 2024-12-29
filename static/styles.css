@@ -1,0 +1,26 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+@font-face {
+    font-family: "Ortica-Light";
+    src: url("./fonts/OrticaLinear-Light.otf") format("opentype");
+}
+
+
+/* Colors */
+:root {
+    --primary: #A97C75;
+    --textPrimary: #1A1A1A;
+    --white: #F9F9F9;
+}
+
+
+/* Styles */
+
+body {
+    margin: 0;
+    background-color: var(--white);
+    font-family: Oritca-Light, serif;
+}
