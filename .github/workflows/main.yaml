@@ -17,7 +17,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: us-west-1
-          role-to-assume: https://github.com/gavinmccabe/wedding-website.git
+          role-to-assume: arn:aws:iam::533267264662:role/WeddingServerRole
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v6
