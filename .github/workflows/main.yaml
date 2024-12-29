@@ -13,13 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Login to ECR
+      - name: Assume IAM Role
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: us-west-1
           role-to-assume: arn:aws:iam::533267264662:role/WeddingServerRole
 
-      - name: Amazon ECR "Login" Action for GitHub Actions
+      - name: Login to ECR
+        id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2.0.1
 
       - name: Build and Push Docker Image
@@ -29,3 +30,16 @@ jobs:
           tags: ${{ secrets.ECR_REPOSITORY_URI }}:${{ github.sha }}
           file: ./Dockerfile
           context: .
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Start Container via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SERVER_ADDR }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_KEY }}
+          script: |
+            whoami
