@@ -19,6 +19,9 @@ jobs:
           aws-region: us-west-1
           role-to-assume: arn:aws:iam::533267264662:role/WeddingServerRole
 
+      - name: Amazon ECR "Login" Action for GitHub Actions
+        uses: aws-actions/amazon-ecr-login@v2.0.1
+
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v6
         with:
