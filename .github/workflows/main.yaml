@@ -42,4 +42,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_KEY }}
           script: |
-            whoami
+            aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 533267264662.dkr.ecr.us-west-1.amazonaws.com
+            docker image pull wedding-server/wedding-website
+            docker run -p 80:3000 wedding-server/wedding-website
