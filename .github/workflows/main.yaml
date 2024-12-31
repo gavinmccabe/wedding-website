@@ -52,4 +52,4 @@ jobs:
             aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 533267264662.dkr.ecr.us-west-1.amazonaws.com
             docker image pull ${{ secrets.ECR_REPOSITORY_URI }}:${{ github.sha }}
             docker image tag ${{ secrets.ECR_REPOSITORY_URI }}:${{ github.sha }} svelte-app:latest
-            docker run -d --restart unless-stopped -p 80:3000 svelte-app:latest
+            docker run -d --restart unless-stopped -n svelte-app -p 80:3000 svelte-app:latest
