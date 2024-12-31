@@ -43,5 +43,6 @@ jobs:
           key: ${{ secrets.SERVER_KEY }}
           script: |
             aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 533267264662.dkr.ecr.us-west-1.amazonaws.com
-            docker image pull wedding-server/wedding-website
-            docker run -p 80:3000 wedding-server/wedding-website
+            docker image pull ${{ secrets.ECR_REPOSITORY_URI }}
+            docker image tag ${{ secrets.ECR_REPOSITORY_URI }} svelte-app:latest
+            docker run -p 80:3000 svelte-app:latest
