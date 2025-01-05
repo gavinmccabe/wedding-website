@@ -11,23 +11,23 @@
 </script>
 
 <!-- svelte-ignore a11y_consider_explicit_label -->
-<a id="homeAnchor"></a>
+<a id="home"></a>
 <NavBar />
 <Hero />
 <!-- svelte-ignore a11y_consider_explicit_label -->
-<a id="ourStoryAnchor"></a>
+<a id="ourStory"></a>
 <OurStory />
 <!-- svelte-ignore a11y_consider_explicit_label -->
-<a id="venueAnchor"></a>
+<a id="venue"></a>
 <Venue />
 <BridalParty />
 <!-- svelte-ignore a11y_consider_explicit_label -->
-<a id="registryAnchor"></a>
+<a id="registry"></a>
 <Registry />
 <!-- svelte-ignore a11y_consider_explicit_label -->
-<a id="faqAnchor"></a>
+<a id="faq"></a>
 <FAQSection />
 <!-- svelte-ignore a11y_consider_explicit_label -->
-<a id="rsvpAnchor"></a>
+<a id="rsvp"></a>
 <RSVPForm />
 <Footer />
