@@ -1,26 +1,23 @@
-
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
 
 @font-face {
-    font-family: "Ortica-Light";
-    src: url("./fonts/OrticaLinear-Light.otf") format("opentype");
+  font-family: "Ortica-Light";
+  src: url("./fonts/OrticaLinear-Light.otf") format("opentype");
 }
-
 
 /* Colors */
 :root {
-    --primary: #A97C75;
-    --textPrimary: #1A1A1A;
-    --white: #F9F9F9;
+  --primary: #a97c75;
+  --textPrimary: #1a1a1a;
+  --white: #f9f9f9;
 }
-
 
 /* Styles */
 
 body {
-    margin: 0;
-    background-color: var(--white);
-    font-family: Ortica-Light, serif;
+  margin: 0;
+  background-color: var(--white);
+  font-family: Ortica-Light, serif;
 }
