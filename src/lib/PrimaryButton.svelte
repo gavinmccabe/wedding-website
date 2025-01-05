@@ -25,7 +25,7 @@
     }
 
     a, button {
-        padding: 18px 26px;
+        padding: 1em 2em;
         font-family: Ortica-Light, serif;
         font-size: 1.375rem;
         text-decoration: none;
@@ -39,6 +39,14 @@
     .inverted {
         background: var(--white);
         color: var(--primary);
+    }
+
+    @media (max-width: 700px) {
+        a, button {
+            font-size: 4vw;
+        }
+
+        padding {}
     }
 
 

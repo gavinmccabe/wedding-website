@@ -46,4 +46,11 @@
         font-family: "Ortica-Light", serif;
         font-size: 0.875rem;
     }
+
+    @media (max-width: 1200px) {
+        ul {
+            display: none;
+        }
+
+    }
 </style>

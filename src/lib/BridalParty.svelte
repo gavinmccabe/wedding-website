@@ -1,6 +1,8 @@
 <script lang="ts">
     import BridalPartySelector from "$lib/BridalPartySelector.svelte";
     import placeholder from "$lib/assets/bridal-party-placeholder.png"
+    import ninaHeadshot from "$lib/assets/nina-headshot.png";
+    import shiqiHeadshot from "$lib/assets/shiqi-headshot.png";
 
     let groomSelected = true;
 </script>
@@ -11,7 +13,7 @@
 <BridalPartySelector bind:groomSelected />
 <div id="party">
     <figure>
-        <img src="{placeholder}" alt="placeholder" />
+        <img src="{groomSelected ? placeholder : ninaHeadshot}" alt="placeholder" />
         <figcaption>
             {#if groomSelected}
                 Kai Vylet
@@ -21,7 +23,7 @@
         </figcaption>
     </figure>
     <figure>
-        <img src="{placeholder}" alt="placeholder" />
+        <img src="{groomSelected ? placeholder : shiqiHeadshot}" alt="placeholder" />
         <figcaption>
             {#if groomSelected}
                 José de la Fuente
@@ -56,15 +58,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
     }
 
     figcaption {
         font-size: 2rem;
         font-family: Ortica-Light, serif;
+        text-align: center;
     }
 
     figure > img {
+        aspect-ratio: 1;
+        width: 100%;
+        max-width: 200px;
         margin: 1vw 2vw;
         border: 3px solid var(--primary);
     }
@@ -73,5 +78,15 @@
         margin-bottom: 10rem;
     }
 
+    @media (max-width: 700px) {
+        figcaption {
+            font-size: 5vw;
+        }
+
+        #party {
+            flex-direction: column;
+        }
+
+    }
 
 </style>

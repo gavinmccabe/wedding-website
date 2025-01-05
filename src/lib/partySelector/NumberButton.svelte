@@ -42,7 +42,12 @@
         margin: 0 1rem;
         align-items: center;
         height: 50px;
-        width: 100%;
+        padding-right: 10px;
+    }
 
+    @media (max-width: 700px) {
+        div {
+            margin-bottom: 15px;
+        }
     }
 </style>

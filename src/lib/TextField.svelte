@@ -44,6 +44,7 @@
         font-size: 1rem;
         padding: 0.75rem;
         background: none;
+        border-radius: 0;
     }
 
 </style>

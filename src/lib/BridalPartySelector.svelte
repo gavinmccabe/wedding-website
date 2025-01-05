@@ -57,4 +57,11 @@
         width: 0;
         background-color: var(--primary);
     }
+
+    @media (max-width: 800px) {
+        button {
+            font-size: 7vw;
+        }
+    }
+
 </style>

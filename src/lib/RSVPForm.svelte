@@ -67,10 +67,17 @@
             <PartySelector bind:selectedValue={partySize} />
         </div>
         {#each guests as guest, i}
-            <div class="row">
+            <div class="row mobile-unfriendly">
                 <TextField title="Guest First Name" value={guest.firstName} placeholder="John" onInputChange={(e) => updateGuest(i, e.target?.value, guest.lastName)} required />
                 <TextField title="Guest Last Name" value={guest.lastName} placeholder="Doe" onInputChange={(e) => updateGuest(i, guest.firstName, e.target?.value)} required />
             </div>
+            <div class="row mobile-friendly">
+                <TextField title="Guest First Name" value={guest.firstName} placeholder="John" onInputChange={(e) => updateGuest(i, e.target?.value, guest.lastName)} required />
+            </div>
+            <div class="row mobile-friendly">
+                <TextField title="Guest Last Name" value={guest.lastName} placeholder="Doe" onInputChange={(e) => updateGuest(i, guest.firstName, e.target?.value)} required />
+            </div>
+
         {/each}
         <div class="row">
             <TextField title="Phone Number" value={phoneNumber} onInputChange={onPhoneInput} placeholder="(123) 456-7890" required />
@@ -121,7 +128,7 @@
     }
 
     form {
-        width: 50%;
+        width: 85%;
     }
 
     .row {
@@ -134,6 +141,22 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+    }
+
+    @media (max-width: 700px) {
+        p {
+           width: 80%;
+        }
+
+        .mobile-unfriendly {
+            display: none;
+        }
+    }
+
+    @media (min-width: 701px) {
+        .mobile-friendly {
+            display: none;
+        }
     }
 
 </style>

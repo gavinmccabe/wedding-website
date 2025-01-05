@@ -17,9 +17,7 @@
 <style>
 
     section {
-        display: flex;
-        flex-direction: row;
-        height: 45vw;
+        min-height: 45vw;
         background-color: var(--primary);
         color: var(--white);
         font-family: Ortica-Light, serif;
@@ -31,17 +29,16 @@
         font-weight: normal;
         font-size: 6.3125rem;
         line-height: 101%;
-        width: 33%;
         display: flex;
         justify-content: center;
-        padding: 10px;
+        padding: 3vw;
+        margin: 0;
     }
 
     aside {
-        width: 67%;
         display: flex;
         justify-content: center;
-        padding: 50px;
+        padding: 8vw;
         font-size: 1.375rem;
         line-height: 160%;
     }
@@ -52,6 +49,21 @@
 
     img {
         width: 100%;
+    }
+
+
+    @media(min-width: 700px) {
+        section {
+            display: flex;
+        }
+
+        h1 {
+            width: 33%;
+        }
+
+        aside {
+            width: 67%;
+        }
     }
 
 </style>

@@ -33,6 +33,7 @@
         width: 80%;
         margin: 0;
         padding: 0;
+        justify-content: center;
     }
 
     #logo {
@@ -60,6 +61,12 @@
         text-decoration: none;
         color: var(--textPrimary);
         opacity: 60%;
+    }
+
+    @media (max-width: 1200px) {
+        #navLeft, #navRight {
+            display: none;
+        }
     }
 
 </style>

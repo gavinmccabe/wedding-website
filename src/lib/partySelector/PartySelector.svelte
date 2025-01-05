@@ -34,4 +34,10 @@
         width: 100%;
     }
 
+    @media (max-width: 700px) {
+        div {
+            flex-wrap: wrap;
+        }
+    }
+
 </style>

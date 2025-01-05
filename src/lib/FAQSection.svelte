@@ -48,7 +48,16 @@ import FAQItem from "./FAQItem.svelte";
         display: flex;
         justify-content: center;
         margin: 10rem 0 5rem 0;
+    }
 
+    @media (max-width: 700px) {
+        section {
+            flex-direction: column;
+        }
+        .col {
+            width: 80%;
+            margin: 0 10vw;
+        }
     }
 
 

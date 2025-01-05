@@ -9,6 +9,9 @@
     <aside>
         <h2>The Venue</h2>
         <h1>Sterling Hills</h1>
+        <figure class="mobile-fig">
+            <img src="{venueImage}" alt="ceremony arch" />
+        </figure>
         <p>
             Overlooking the Topanga Mountains, the stunning Tuscan architecture tucked away between strawberry fields and orange groves creates the perfect atmosphere for our special day.
         </p>
@@ -17,7 +20,7 @@
             Camarillo, California 93010
         </p>
     </aside>
-    <figure>
+    <figure class="desktop-fig">
         <img src="{venueImage}" alt="ceremony arch" />
     </figure>
 </section>
@@ -63,7 +66,7 @@
         margin: 8vw 0;
     }
 
-    aside, figure {
+    aside, .desktop-fig {
         width: 40%;
     }
 
@@ -101,13 +104,13 @@
     }
 
     .accommodation-section {
-        margin: 15vh 8vh 8vh 8vh;
+        margin: 15vh 5vw 8vh 5vw;
     }
 
     h3 {
         font-weight: normal;
         font-size: 2.6875rem;
-        margin: 0 0 30px 0;
+        margin: 0 0 10vw 0;
         font-family: Ortica-Light, serif;
     }
 
@@ -115,6 +118,50 @@
         display: flex;
         justify-content: center;
         margin-bottom: 10rem;
+    }
+
+    .mobile-fig {
+        width: 100%;
+        margin: 5vh 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-fig > img {
+        width: 80%;
+    }
+
+    @media (max-width: 700px) {
+        .desktop-fig {
+            display: none;
+        }
+
+        aside {
+            width: 80%;
+        }
+
+        #divider > img {
+            width: 50%;
+        }
+
+        #divider {
+            margin-bottom: 8vw;
+        }
+
+        #accommodations {
+            flex-direction: column;
+        }
+
+        .accommodation-section {
+            margin: 4vw 8vw;
+        }
+
+    }
+
+    @media (min-width: 700px) {
+        .mobile-fig {
+            display: none;
+        }
     }
 
 </style>
