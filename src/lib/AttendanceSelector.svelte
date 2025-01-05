@@ -82,7 +82,7 @@
 
     @media (max-width: 700px) {
         div {
-            font-size: 3vw
+            font-size: clamp(1vw, 3vw, 0.875rem);
         }
     }
 

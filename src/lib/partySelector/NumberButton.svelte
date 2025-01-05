@@ -43,6 +43,7 @@
         align-items: center;
         height: 50px;
         padding-right: 10px;
+        font-size: 0.875rem;
     }
 
     @media (max-width: 700px) {

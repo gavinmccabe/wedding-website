@@ -18,7 +18,9 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 20px; /* TODO: Remove */
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
     }
 
     button {
@@ -28,6 +30,7 @@
         font-family: Ortica-Light, serif;
         font-size: 3.5rem;
         color: var(--textPrimary);
+        padding: 0;
     }
 
     .unselected > button {
@@ -60,7 +63,7 @@
 
     @media (max-width: 800px) {
         button {
-            font-size: 7vw;
+            font-size: 6vw;
         }
     }
 

@@ -60,6 +60,3 @@ jobs:
         with:
           aws-region: us-west-1
           role-to-assume: arn:aws:iam::533267264662:role/WeddingServerRole
-
-      - name: Create CloudFront Invalidation
-        run: aws cloudfront create-invalidation --distribution-id E14NPU88ELU6KS
