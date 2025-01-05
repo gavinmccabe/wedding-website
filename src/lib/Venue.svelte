@@ -172,10 +172,12 @@
 
     #accommodations {
       flex-direction: column;
+      align-items: center;
     }
 
     .accommodation-section {
       margin: 4vw 8vw;
+      width: 70%;
     }
   }
 
