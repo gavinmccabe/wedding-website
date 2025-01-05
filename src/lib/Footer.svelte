@@ -1,11 +1,11 @@
 <footer>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Our Story</a></li>
-    <li><a href="#">Venue</a></li>
-    <li><a href="#">Registry</a></li>
-    <li><a href="#">FAQ</a></li>
-    <li><a href="#">RSVP</a></li>
+    <li><a href="#homeAnchor">Home</a></li>
+    <li><a href="#ourStoryAnchor">Our Story</a></li>
+    <li><a href="#venueAnchor">Venue</a></li>
+    <li><a href="#registryAnchor">Registry</a></li>
+    <li><a href="#faqAnchor">FAQ</a></li>
+    <li><a href="#rsvpAnchor">RSVP</a></li>
   </ul>
   <span>&copy; 2025 Gavin McCabe</span>
 </footer>

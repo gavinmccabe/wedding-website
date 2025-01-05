@@ -5,13 +5,6 @@
 <h1>FAQ</h1>
 <section>
   <div class="col">
-    <FAQItem question="What's the best way to get to Camarillo?">
-      Camarillo is about 50 miles from downtown Los Angeles, making
-      transportation fairly easy. If you're driving, the 101 will take you
-      almost directly to our beautiful venue. For family and friends flying into
-      Southern California, we recommend flying into Burbank (BUR), Santa Barbara
-      (SBA), or Los Angeles (LAX).
-    </FAQItem>
     <FAQItem question="What is the dress code?">
       We kindly request you adhere to a "Garden Party Formal" dress code.
       Additionally, we ask that neither you nor your guests wear any shade of
@@ -25,15 +18,6 @@
     </FAQItem>
   </div>
   <div class="col">
-    <FAQItem question="Where are the best places to stay in the area?">
-      While Camarillo is beautiful, hotel options are limited in the area.
-      Depending on the scenery you're looking for, there are a lot of options
-      nearby. If you're looking for a mountainous view, Simi Valley has multiple
-      great hotel options. Those seeking a more coastal experience may enjoy
-      Ventura or Santa Barabara. For nicer resorts, we recommend looking in
-      Westlake Village and Thousand Oaks. We would recommend against staying in
-      Los Angeles.
-    </FAQItem>
     <FAQItem question="Am I permitted to bring a guest?">
       Unless included on your personalized invitation, we kindly ask you do not
       bring any uninvited guests or children. Due to the small, intimate nature

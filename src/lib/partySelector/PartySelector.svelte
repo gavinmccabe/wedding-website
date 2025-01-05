@@ -18,6 +18,7 @@
 <style>
   div {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
   }
 
@@ -26,17 +27,9 @@
     color: var(--textPrimary);
     font-size: 0.875rem;
     line-height: 170%;
-    margin-left: 1rem;
-    margin-bottom: 0.3rem;
   }
 
   section {
     width: 100%;
-  }
-
-  @media (max-width: 700px) {
-    div {
-      flex-wrap: wrap;
-    }
   }
 </style>

@@ -4,7 +4,7 @@
   import ninaHeadshot from "$lib/assets/nina-headshot.png";
   import shiqiHeadshot from "$lib/assets/shiqi-headshot.png";
 
-  let groomSelected = true;
+  let groomSelected = false;
 </script>
 
 <header>

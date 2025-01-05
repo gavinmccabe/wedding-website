@@ -6,9 +6,12 @@
   <div>
     <h1>Registry</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet magna
-      iriure amet. Wisi hendrerit labore iusto sit lobortis qui delenit autem
-      nihil nonummy. Cum eros eros.
+      We are so grateful for your love and support as we embark on this exciting
+      journey together! While we have created a registry for those who wish to
+      celebrate with us through gifts, please know that your presence at our
+      wedding is the greatest gift of all. Thank you for being a part of our
+      special day! If you’d like to explore our registry, you can find it below.
+      Additionally, a card box and gift table will be available at our venue.
     </p>
     <PrimaryButton href="" inverted>View Our Registry</PrimaryButton>
   </div>
@@ -23,7 +26,7 @@
     font-family: Ortica-Light, serif;
     color: var(--white);
     width: 60%;
-    margin: 10vh 0;
+    margin: 10vw 0;
   }
 
   h1 {
@@ -40,7 +43,7 @@
   }
 
   p {
-    margin: 7vh 0;
+    margin: 7vw 0;
     opacity: 80%;
   }
 </style>

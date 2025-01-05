@@ -6,7 +6,7 @@
   <h2>Please join us to celebrate</h2>
   <h1>Gavin<br class="mobileOnly" /> & <br class="mobileOnly" />Amy</h1>
   <h2>
-    June 16, 2025 <span class="mobileHidden"> &mdash; </span><br
+    June 16, 2025 6:00pm <span class="mobileHidden"> &mdash; </span><br
       class="mobileOnly"
     /> Camarillo, California
   </h2>

@@ -9,6 +9,7 @@
   <main>
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <div
+      id="leftBtn"
       tabindex="0"
       role="button"
       on:click={() => {
@@ -66,7 +67,7 @@
     display: flex;
     border: 1px solid var(--textPrimary);
     align-items: center;
-    margin: 0 1rem;
+    /*margin: 0 1rem;*/
     cursor: pointer;
   }
 
@@ -85,12 +86,15 @@
     font-size: 0.875rem;
     line-height: 170%;
     margin-bottom: 0.3rem;
-    margin-left: 1rem;
     display: flex;
   }
 
   section {
     width: 100%;
+  }
+
+  #leftBtn {
+    margin-right: 2rem;
   }
 
   @media (max-width: 700px) {

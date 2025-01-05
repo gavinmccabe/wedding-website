@@ -5,15 +5,15 @@
 <nav>
   <ul>
     <div id="navLeft">
-      <li><a href={"#"}>Home</a></li>
-      <li><a href={"#"}>Our Story</a></li>
-      <li><a href={"#"}>Venue</a></li>
+      <li><a href={"#homeAnchor"}>Home</a></li>
+      <li><a href={"#ourStoryAnchor"}>Our Story</a></li>
+      <li><a href={"#venueAnchor"}>Venue</a></li>
     </div>
     <li id="logo"><Logo /></li>
     <div id="navRight">
-      <li><a href={"#"}>Itinerary</a></li>
-      <li><a href={"#"}>Registry</a></li>
-      <li><a href={"#"}>RSVP</a></li>
+      <li><a href={"#registryAnchor"}>Registry</a></li>
+      <li><a href={"#faqAnchor"}>FAQ</a></li>
+      <li><a href={"#rsvpAnchor"}>RSVP</a></li>
     </div>
   </ul>
 </nav>

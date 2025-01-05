@@ -37,12 +37,13 @@
   div {
     border: 1px solid var(--textPrimary);
     display: flex;
-    margin: 0 1rem;
+    margin-right: 2rem;
     align-items: center;
     height: 50px;
     padding-right: 10px;
     font-size: 0.875rem;
     cursor: pointer;
+    margin-bottom: 0.3rem;
   }
 
   @media (max-width: 700px) {

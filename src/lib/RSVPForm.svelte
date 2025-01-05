@@ -75,11 +75,11 @@
 <h1>RSVP</h1>
 <div id="desc">
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Zzril facer augue
-    dolores consectetuer quod nonummy blandit molestie consectetur tincidunt
-    consequat. Commodo nam duo adipisici incidunt, te odio duo doming at rebum
-    aliquid enim excepteur, nisi wisi consectetur voluptua cum culpa vulputate
-    sed eirmod ut delenit est.
+    We are thrilled to celebrate our special day with you! Your presence means
+    the world to us, and we kindly ask you to let us know if you can join the
+    festivities by <strong>May 15, 2025</strong>. Please take a moment to RSVP
+    below. We can’t wait to share this unforgettable day with our favorite
+    people!
   </p>
 </div>
 <section>
@@ -89,21 +89,26 @@
     </div>
     {#each guests as guest, i}
       <div class="row mobile-unfriendly">
-        <TextField
-          title="Guest First Name"
-          value={guest.firstName}
-          placeholder="John"
-          onInputChange={(e) => updateGuest(i, e.target?.value, guest.lastName)}
-          required
-        />
-        <TextField
-          title="Guest Last Name"
-          value={guest.lastName}
-          placeholder="Doe"
-          onInputChange={(e) =>
-            updateGuest(i, guest.firstName, e.target?.value)}
-          required
-        />
+        <div class="row-item" id="leftBtn">
+          <TextField
+            title="Guest First Name"
+            value={guest.firstName}
+            placeholder="John"
+            onInputChange={(e) =>
+              updateGuest(i, e.target?.value, guest.lastName)}
+            required
+          />
+        </div>
+        <div class="row-item">
+          <TextField
+            title="Guest Last Name"
+            value={guest.lastName}
+            placeholder="Doe"
+            onInputChange={(e) =>
+              updateGuest(i, guest.firstName, e.target?.value)}
+            required
+          />
+        </div>
       </div>
       <div class="row mobile-friendly">
         <TextField
@@ -178,7 +183,7 @@
   }
 
   form {
-    width: 85%;
+    width: 60%;
   }
 
   .row {
@@ -193,9 +198,21 @@
     margin-top: 3rem;
   }
 
+  .row-item {
+    width: 50%;
+  }
+
+  #leftBtn {
+    margin-right: 2rem;
+  }
+
   @media (max-width: 700px) {
     p {
       width: 80%;
+    }
+
+    form {
+      width: 85%;
     }
 
     .mobile-unfriendly {

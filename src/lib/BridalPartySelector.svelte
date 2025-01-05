@@ -3,21 +3,21 @@
 </script>
 
 <header>
-  <div class={groomSelected ? "selected" : "unselected"}>
-    <button
-      type="button"
-      on:click={() => {
-        groomSelected = true;
-      }}>Groomsmen</button
-    >
-    <div class="underline"></div>
-  </div>
   <div class={groomSelected ? "unselected" : "selected"}>
     <button
       type="button"
       on:click={() => {
         groomSelected = false;
       }}>Bridesmaids</button
+    >
+    <div class="underline"></div>
+  </div>
+  <div class={groomSelected ? "selected" : "unselected"}>
+    <button
+      type="button"
+      on:click={() => {
+        groomSelected = true;
+      }}>Groomsmen</button
     >
     <div class="underline"></div>
   </div>

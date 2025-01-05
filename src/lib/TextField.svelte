@@ -29,7 +29,7 @@
     flex-direction: column;
     font-family: Ortica-Light, serif;
     color: var(--textPrimary);
-    margin: 0 1rem;
+    /*margin: 0 1rem;*/
     width: 100%;
   }
 

@@ -33,31 +33,33 @@
     <div class="accommodation-section">
       <h3>Hotels</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum erat id
-        elit odio kasd dolore option, eleifend nam ullamco elit eum sea culpa
-        aliqua augue sunt in. Labore duis stet praesent doming officia eiusmod
-        facilisis. Dolor laoreet sit doming wisi ullamco. Volutpat dolor
-        tincidunt. Laborum cillum sunt.
+        While Camarillo is beautiful, hotel options are limited in the area.
+        Depending on the scenery you're looking for, there are a lot of options
+        nearby. If you're looking for a mountainous view, both Simi Valley and
+        Moorpark have multiple great hotel options. Those seeking a more coastal
+        experience may enjoy Ventura or Santa Barabara. For nicer resorts, we
+        recommend looking in Westlake Village and Thousand Oaks. We would
+        recommend against staying in Los Angeles.
       </p>
     </div>
     <div class="accommodation-section">
       <h3>Travel</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum erat id
-        elit odio kasd dolore option, eleifend nam ullamco elit eum sea culpa
-        aliqua augue sunt in. Labore duis stet praesent doming officia eiusmod
-        facilisis. Dolor laoreet sit doming wisi ullamco. Volutpat dolor
-        tincidunt. Laborum cillum sunt.
+        Camarillo is about 50 miles from downtown Los Angeles, making
+        transportation fairly easy. If you're driving, the 101 will take you
+        almost directly to our beautiful venue. For family and friends flying
+        into Southern California, we recommend flying into Burbank (BUR), Santa
+        Barbara (SBA), or Los Angeles (LAX).
       </p>
     </div>
     <div class="accommodation-section">
       <h3>Activities</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum erat id
-        elit odio kasd dolore option, eleifend nam ullamco elit eum sea culpa
-        aliqua augue sunt in. Labore duis stet praesent doming officia eiusmod
-        facilisis. Dolor laoreet sit doming wisi ullamco. Volutpat dolor
-        tincidunt. Laborum cillum sunt.
+        The greater Los Angeles area has activities for everybody. Some of our
+        favorites include The Getty, Griffith Observatory, Universal Studios,
+        and the Huntington Library and Botanical Gardens. If you're looking for
+        some specific recommendations, feel free to reach out to the bride and
+        groom!
       </p>
     </div>
   </div>
@@ -123,13 +125,14 @@
   }
 
   .accommodation-section {
-    margin: 15vh 5vw 8vh 5vw;
+    margin: 10vw 5vw 8vw 5vw;
+    width: 33%;
   }
 
   h3 {
     font-weight: normal;
     font-size: 2.6875rem;
-    margin: 0 0 10vw 0;
+    margin: 0 0 5vw 0;
     font-family: Ortica-Light, serif;
   }
 
