@@ -13,7 +13,9 @@
       special day! If you’d like to explore our registry, you can find it below.
       Additionally, a card box and gift table will be available at our venue.
     </p>
-    <PrimaryButton href="" inverted>View Our Registry</PrimaryButton>
+    <PrimaryButton href="https://www.zola.com/registry/gavinandamy2025" inverted
+      >View Our Registry</PrimaryButton
+    >
   </div>
 </section>
 
