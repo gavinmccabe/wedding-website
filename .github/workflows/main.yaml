@@ -37,6 +37,11 @@ jobs:
           platforms: linux/arm64
           file: ./Dockerfile
           context: .
+          build-args: |
+            RSVP_EMAIL_USER=${{ secrets.RSVP_EMAIL_USER }}
+            RSVP_EMAIL_PASS=${{ secrets.RSVP_EMAIL_PASS }}
+            RSVP_EMAIL_HOST=${{ secrets.RSVP_EMAIL_HOST }}
+            RSVP_EMAIL_DEST=${{ secrets.RSVP_EMAIL_DEST }}
 
   deploy:
     runs-on: ubuntu-latest
