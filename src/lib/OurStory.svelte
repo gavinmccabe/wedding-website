@@ -7,22 +7,35 @@
   <aside>
     <div>
       <p>
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Purus auctor
-        pharetra hendrerit; ullamcorper massa diam elementum platea. Vehicula
-        cras inceptos enim; eu aenean elementum massa. Nisi eros dictumst tempus
-        mus nostra consectetur. Non pulvinar ante maecenas scelerisque natoque
-        facilisi. Neque eget inceptos tellus sagittis elit at. Euismod turpis
-        integer himenaeos; ridiculus etiam nam class. Lacinia ligula elementum,
-        platea tristique urna ultrices nostra? Proin ipsum interdum molestie
-        class integer conubia mus cursus.
+        Gavin and Amy first met as high school freshmen in 2015 at the
+        county-wide science fair, though unbeknownst to each other at the time.
+        Driven by curiosity, Amy couldn’t resist snooping around Gavin’s
+        iPad-embedded poster board, while he was afar. As Gavin returned to his
+        project, Amy quickly slipped away, embarrassed to be seen meddling with
+        his work.
       </p>
       <p>
-        Convallis velit at ex quis, eros maximus sodales nec. Laoreet tempor
-        tempus; in augue consectetur dolor. Gravida fames non consequat feugiat
-        maximus orci. Sapien maximus nascetur semper nulla porttitor curabitur
-        facilisi. Tempor ut primis semper consectetur curae praesent, sem neque
-        taciti. Montes nisi proin ridiculus platea varius. Et quis aliquet
-        lobortis condimentum malesuada.
+        Two years later, Gavin and Amy crossed paths again on their first day of
+        Dr. Woo’s physics class, finding themselves randomly assigned as desk
+        mates. A close friendship quickly developed, and by the time senior year
+        began, it had blossomed into something more. Gavin and Amy spent their
+        unforgettable senior year together, filled with laughter, late-night
+        conversations, and shared dreams, before they began a long-distance
+        relationship — one in sunny California and the other in lively New York.
+      </p>
+      <p>
+        After countless phone calls and frequent visits, their 4.5 years of
+        long-distance came to an end in late 2023. Gavin’s excitement to be
+        reunited with Amy was so overwhelming that, the day she returned, he
+        dropped to one knee and proposed. Under the pretense of a casual
+        breakfast by the water, Gavin led Amy to the beautiful York River. As
+        they casually strolled along the historic landmarks, Gavin asked Amy to
+        spend forever with him.
+      </p>
+      <p>
+        Having moved across the country together, welcomed their mischievous pup
+        Waffles, and recently become homeowners, Gavin and Amy are so excited to
+        begin this new chapter of their lives as husband and wife!
       </p>
     </div>
   </aside>
