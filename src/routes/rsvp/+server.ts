@@ -12,7 +12,7 @@ import type { Guest } from "../../app";
 
 const submissions = new Map();
 
-async function sendEmail(guests: string[], attending: boolean) {
+function sendEmail(guests: string[], attending: boolean) {
   try {
     console.log("***");
     console.log("RSVP_EMAIL_USER:", RSVP_EMAIL_USER);
@@ -22,14 +22,14 @@ async function sendEmail(guests: string[], attending: boolean) {
     console.log("***");
     console.log("Hello, world!");
 
-    const transporter = nodemailer.createTransport({
-      host: RSVP_EMAIL_HOST,
-      secure: true,
-      auth: {
-        user: RSVP_EMAIL_USER,
-        pass: RSVP_EMAIL_PASS,
-      },
-    });
+    // const transporter = nodemailer.createTransport({
+    //   host: RSVP_EMAIL_HOST,
+    //   secure: true,
+    //   auth: {
+    //     user: RSVP_EMAIL_USER,
+    //     pass: RSVP_EMAIL_PASS,
+    //   },
+    // });
 
     let emailBody = `
     <h1>RSVP Alert</h1>
@@ -44,12 +44,12 @@ async function sendEmail(guests: string[], attending: boolean) {
     } else {
       emailBody += "<p><strong>Will not</strong> be attending!</p>";
     }
-    await transporter.sendMail({
-      from: `RSVP Alert <${RSVP_EMAIL_USER}>`,
-      to: RSVP_EMAIL_DEST,
-      subject: "New RSVP!",
-      html: emailBody,
-    });
+    // await transporter.sendMail({
+    //   from: `RSVP Alert <${RSVP_EMAIL_USER}>`,
+    //   to: RSVP_EMAIL_DEST,
+    //   subject: "New RSVP!",
+    //   html: emailBody,
+    // });
   } catch (error) {
     console.error("Error in sendEmail function:", error);
   }
@@ -96,7 +96,7 @@ export async function POST({ request }) {
       guests.push(`${guest.firstName} ${guest.lastName}`);
     }
 
-    await sendEmail(guests, formData.attending);
+    sendEmail(guests, formData.attending);
 
     return new Response();
   } catch (err) {
