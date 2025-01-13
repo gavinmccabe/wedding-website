@@ -13,40 +13,46 @@ import type { Guest } from "../../app";
 const submissions = new Map();
 
 async function sendEmail(guests: string[], attending: boolean) {
-  console.log("***");
-  console.log(RSVP_EMAIL_USER);
-  console.log("***");
-  console.log("Hello, world!");
-  const transporter = nodemailer.createTransport({
-    host: RSVP_EMAIL_HOST,
-    secure: true,
-    auth: {
-      user: RSVP_EMAIL_USER,
-      pass: RSVP_EMAIL_PASS,
-    },
-  });
+  try {
+    console.log("***");
+    console.log("RSVP_EMAIL_USER:", RSVP_EMAIL_USER);
+    console.log("RSVP_EMAIL_HOST:", RSVP_EMAIL_HOST);
+    console.log("RSVP_EMAIL_PASS:", RSVP_EMAIL_PASS);
+    console.log("RSVP_EMAIL_DEST:", RSVP_EMAIL_DEST);
+    console.log("***");
+    console.log("Hello, world!");
 
-  let emailBody = `
-  <h1>RSVP Alert</h1>
-  <p>You have a new RSVP!</p>
-  `;
+    const transporter = nodemailer.createTransport({
+      host: RSVP_EMAIL_HOST,
+      secure: true,
+      auth: {
+        user: RSVP_EMAIL_USER,
+        pass: RSVP_EMAIL_PASS,
+      },
+    });
 
-  for (let guest of guests) {
-    emailBody += `<p><strong>${guest}</strong></p>`;
+    let emailBody = `
+    <h1>RSVP Alert</h1>
+    <p>You have a new RSVP!</p>
+    `;
+    for (let guest of guests) {
+      emailBody += `<p><strong>${guest}</strong></p>`;
+    }
+
+    if (attending) {
+      emailBody += "<p><strong>Will</strong> be attending!</p>";
+    } else {
+      emailBody += "<p><strong>Will not</strong> be attending!</p>";
+    }
+    await transporter.sendMail({
+      from: `RSVP Alert <${RSVP_EMAIL_USER}>`,
+      to: RSVP_EMAIL_DEST,
+      subject: "New RSVP!",
+      html: emailBody,
+    });
+  } catch (error) {
+    console.error("Error in sendEmail function:", error);
   }
-
-  if (attending) {
-    emailBody += "<p><strong>Will</strong> be attending!</p>";
-  } else {
-    emailBody += "<p><strong>Will not</strong> be attending!</p>";
-  }
-
-  await transporter.sendMail({
-    from: `RSVP Alert <${RSVP_EMAIL_USER}>`,
-    to: RSVP_EMAIL_DEST,
-    subject: "New RSVP!",
-    html: emailBody,
-  });
 }
 
 export async function POST({ request }) {
