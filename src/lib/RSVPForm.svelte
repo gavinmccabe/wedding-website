@@ -10,6 +10,8 @@
   let phoneNumber: string = "";
   let attending: boolean = true;
 
+  let isSubmitting = false;
+
   let guests: Guest[] = [];
   $: guests = Array.from({ length: partySize }, () => ({
     firstName: "",
@@ -50,6 +52,7 @@
   }
 
   async function handleSubmit(_: Event) {
+    isSubmitting = true;
     try {
       const res = await fetch("/rsvp", {
         method: "POST",
@@ -144,7 +147,11 @@
     </div>
 
     <div id="submitBtn">
-      <PrimaryButton submit>Submit RSVP</PrimaryButton>
+      {#if isSubmitting}
+        <div class="spinner"></div>
+      {:else}
+        <PrimaryButton submit>Submit RSVP</PrimaryButton>
+      {/if}
     </div>
   </form>
 </section>
@@ -204,6 +211,24 @@
 
   #leftBtn {
     margin-right: 2rem;
+  }
+
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--primary);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   @media (max-width: 700px) {
