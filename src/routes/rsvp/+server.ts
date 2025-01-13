@@ -13,7 +13,9 @@ import type { Guest } from "../../app";
 const submissions = new Map();
 
 async function sendEmail(guests: string[], attending: boolean) {
+  console.log("***");
   console.log(RSVP_EMAIL_HOST);
+  console.log("***");
   const transporter = nodemailer.createTransport({
     host: RSVP_EMAIL_HOST,
     secure: true,
