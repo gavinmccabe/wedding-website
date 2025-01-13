@@ -49,7 +49,7 @@
     phoneNumber = formattedValue;
   }
 
-  async function handleSubmit(e: Event) {
+  async function handleSubmit(_: Event) {
     try {
       const res = await fetch("/rsvp", {
         method: "POST",

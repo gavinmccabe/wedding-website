@@ -12,47 +12,37 @@ import type { Guest } from "../../app";
 
 const submissions = new Map();
 
-function sendEmail(guests: string[], attending: boolean) {
-  try {
-    console.log("***");
-    console.log("RSVP_EMAIL_USER:", RSVP_EMAIL_USER);
-    console.log("RSVP_EMAIL_HOST:", RSVP_EMAIL_HOST);
-    console.log("RSVP_EMAIL_PASS:", RSVP_EMAIL_PASS);
-    console.log("RSVP_EMAIL_DEST:", RSVP_EMAIL_DEST);
-    console.log("***");
-    console.log("Hello, world!");
+async function sendEmail(guests: string[], attending: boolean) {
+  const transporter = nodemailer.createTransport({
+    host: RSVP_EMAIL_HOST,
+    secure: true,
+    auth: {
+      user: RSVP_EMAIL_USER,
+      pass: RSVP_EMAIL_PASS,
+    },
+  });
 
-    // const transporter = nodemailer.createTransport({
-    //   host: RSVP_EMAIL_HOST,
-    //   secure: true,
-    //   auth: {
-    //     user: RSVP_EMAIL_USER,
-    //     pass: RSVP_EMAIL_PASS,
-    //   },
-    // });
+  let emailBody = `
+  <h1>RSVP Alert</h1>
+  <p>You have a new RSVP!</p>
+  `;
 
-    let emailBody = `
-    <h1>RSVP Alert</h1>
-    <p>You have a new RSVP!</p>
-    `;
-    for (let guest of guests) {
-      emailBody += `<p><strong>${guest}</strong></p>`;
-    }
-
-    if (attending) {
-      emailBody += "<p><strong>Will</strong> be attending!</p>";
-    } else {
-      emailBody += "<p><strong>Will not</strong> be attending!</p>";
-    }
-    // await transporter.sendMail({
-    //   from: `RSVP Alert <${RSVP_EMAIL_USER}>`,
-    //   to: RSVP_EMAIL_DEST,
-    //   subject: "New RSVP!",
-    //   html: emailBody,
-    // });
-  } catch (error) {
-    console.error("Error in sendEmail function:", error);
+  for (let guest of guests) {
+    emailBody += `<p><strong>${guest}</strong></p>`;
   }
+
+  if (attending) {
+    emailBody += "<p><strong>Will</strong> be attending!</p>";
+  } else {
+    emailBody += "<p><strong>Will not</strong> be attending!</p>";
+  }
+
+  await transporter.sendMail({
+    from: `RSVP Alert <${RSVP_EMAIL_USER}>`,
+    to: RSVP_EMAIL_DEST,
+    subject: "New RSVP!",
+    html: emailBody,
+  });
 }
 
 export async function POST({ request }) {
@@ -96,7 +86,7 @@ export async function POST({ request }) {
       guests.push(`${guest.firstName} ${guest.lastName}`);
     }
 
-    sendEmail(guests, formData.attending);
+    await sendEmail(guests, formData.attending);
 
     return new Response();
   } catch (err) {
