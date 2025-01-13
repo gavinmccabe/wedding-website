@@ -92,7 +92,7 @@ export async function POST({ request }) {
       guests.push(`${guest.firstName} ${guest.lastName}`);
     }
 
-    sendEmail(guests, formData.attending);
+    await sendEmail(guests, formData.attending);
 
     return new Response();
   } catch (err) {
