@@ -5,6 +5,11 @@
 <h1>FAQ</h1>
 <section>
   <div class="col">
+    <FAQItem question="What's the timeline of the wedding?">
+      Our ceremony will begin promptly at 6pm on Monday. Please arrive early as
+      we will not be able to accommodate those who arrive late. We expect
+      cocktail hour to begin around 6:30pm.
+    </FAQItem>
     <FAQItem question="What is the dress code?">
       We kindly request you adhere to a "Garden Party Formal" dress code.
       Additionally, we ask that neither you nor your guests wear any shade of
@@ -16,6 +21,12 @@
       d'oeuvres at cocktail hour followed by a full buffet with multiple entrees
       and sides suited for many dietary restrictions.
     </FAQItem>
+    <FAQItem question="What weather should I expect?">
+      While we can't promise anything, SoCal tends to be fairly warm this time
+      of year and rain is uncommon. While our reception will be indoors, our
+      ceremony will take place outdoors, so please dress appropriately for the
+      weather.
+    </FAQItem>
   </div>
   <div class="col">
     <FAQItem question="Am I permitted to bring a guest?">
@@ -23,6 +34,18 @@
       bring any uninvited guests or children. Due to the small, intimate nature
       of our celebration, we will be unable to accommodate those who were not
       formally invited.
+    </FAQItem>
+    <FAQItem question="Is transportation provided?">
+      We are not providing formal transportation for our events. However, there
+      is ample parking at our venue and if transportation poses a concern,
+      please reach out and we can help coordinate those who wish to ride
+      together.
+    </FAQItem>
+    <FAQItem question="How will we be updated on any changes?">
+      When you RSVP, we kindly request you provide your phone number. By doing
+      so, you agree for us to send you automated texts to keep you apprised of
+      the events scheduled. We'll keep you up-to-date with any changes and
+      reminders for our special day!
     </FAQItem>
     <FAQItem question="I have another question!">
       As we continue to plan our celebration, we will update these FAQs with

@@ -1,6 +1,7 @@
 <script lang="ts">
   import BridalPartySelector from "$lib/BridalPartySelector.svelte";
   import placeholder from "$lib/assets/bridal-party-placeholder.png";
+  import kaiHeadshot from "$lib/assets/kai-headshot.png";
   import ninaHeadshot from "$lib/assets/nina-headshot.png";
   import shiqiHeadshot from "$lib/assets/shiqi-headshot.png";
 
@@ -13,7 +14,7 @@
 <BridalPartySelector bind:groomSelected />
 <div id="party">
   <figure>
-    <img src={groomSelected ? placeholder : ninaHeadshot} alt="placeholder" />
+    <img src={groomSelected ? kaiHeadshot : ninaHeadshot} alt="placeholder" />
     <figcaption>
       {#if groomSelected}
         Kai Vylet
