@@ -1,9 +1,10 @@
 <script lang="ts">
   import BridalPartySelector from "$lib/BridalPartySelector.svelte";
-  import placeholder from "$lib/assets/bridal-party-placeholder.png";
+
   import kaiHeadshot from "$lib/assets/kai-headshot.png";
   import ninaHeadshot from "$lib/assets/nina-headshot.png";
   import shiqiHeadshot from "$lib/assets/shiqi-headshot.png";
+  import joseHeadshot from "$lib/assets/jose-headshot.jpg";
 
   let groomSelected = false;
 </script>
@@ -24,7 +25,7 @@
     </figcaption>
   </figure>
   <figure>
-    <img src={groomSelected ? placeholder : shiqiHeadshot} alt="placeholder" />
+    <img src={groomSelected ? joseHeadshot : shiqiHeadshot} alt="placeholder" />
     <figcaption>
       {#if groomSelected}
         José de la Fuente
