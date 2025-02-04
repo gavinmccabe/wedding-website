@@ -51,7 +51,7 @@
       As we continue to plan our celebration, we will update these FAQs with
       more answers to common questions. If you have a specific question, please
       contact either the Bride or Groom, we would be happy to answer any
-      questino you have.
+      question you have.
     </FAQItem>
   </div>
 </section>
