@@ -12,9 +12,13 @@
     </FAQItem>
     <FAQItem question="What is the dress code?">
       We kindly request you adhere to a "Garden Party Formal" dress code.
-      Additionally, we ask that neither you nor your guests wear any shade of
-      white. Our ceremony will take place outside with an indoor reception to
-      follow; therefore, please dress appropriately for the weather.
+      Additionally, we ask that neither you nor your guests wear red or any
+      shade of white. Our ceremony will take place outside with an indoor
+      reception to follow; therefore, please dress appropriately for the
+      weather. If you need inspiration, take a look at our <a
+        href="https://www.pinterest.com/yifan5wang/dress-code/"
+        >Pintrest board</a
+      >!
     </FAQItem>
     <FAQItem question="What food will be available?">
       Although our final menu is not available in advance, we will serve hors
@@ -23,9 +27,8 @@
     </FAQItem>
     <FAQItem question="What weather should I expect?">
       While we can't promise anything, SoCal tends to be fairly warm this time
-      of year and rain is uncommon. While our reception will be indoors, our
-      ceremony will take place outdoors, so please dress appropriately for the
-      weather.
+      of year and rain is uncommon. Although our reception will be indoors, our
+      ceremony will take place outdoors, so please dress appropriately.
     </FAQItem>
   </div>
   <div class="col">
@@ -75,6 +78,11 @@
     display: flex;
     justify-content: center;
     margin: 10rem 0 5rem 0;
+  }
+
+  a,
+  a:visited {
+    color: var(--primary);
   }
 
   @media (max-width: 700px) {
