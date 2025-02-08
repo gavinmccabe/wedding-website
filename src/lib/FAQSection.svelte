@@ -34,9 +34,9 @@
   <div class="col">
     <FAQItem question="Am I permitted to bring a guest?">
       Unless included on your personalized invitation, we kindly ask you do not
-      bring any uninvited guests or children. Due to the small, intimate nature
-      of our celebration, we will be unable to accommodate those who were not
-      formally invited.
+      bring any uninvited guests. Due to the small, intimate nature of our
+      celebration, we will be unable to accommodate those who were not formally
+      invited.
     </FAQItem>
     <FAQItem question="Is transportation provided?">
       We are not providing formal transportation for our events. However, there
